@@ -13,9 +13,11 @@ use std::collections::HashSet;
 use std::io::Cursor;
 use tokenizers::Tokenizer;
 
+
 const CONTEXT_SIZE: usize = 512;
 const STRIDE: usize = 256;
 const MODEL_ID: &str = "bigcode/tiny_starcoder_py";
+
 
 #[derive(Debug, Deserialize, Clone)]
 struct BigCodeConfigFile {
